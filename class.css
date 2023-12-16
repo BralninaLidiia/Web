@@ -9,6 +9,10 @@
 a:link, a:visited {
   text-decoration: none; /* Убираем стандартное подчеркивание ссылки */
 }
+::selection {
+  background-color:#3A3A3A; /* Цвет фона при выделении */
+  color: #ffffff; /* Цвет текста при выделении */
+}
 header {
   display: flex;
   justify-content: space-between; /* Распределение пространства между элементами */
@@ -107,6 +111,7 @@ body main{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
+  transition: all 0.3s ease;
 }
 .button1 a{
   color: #000000;
@@ -114,6 +119,26 @@ body main{
   text-align: center;
   margin-top: -36px;
   font-size: 16px;
+}
+.button1:hover {
+  color:#ffffffe4; /* Новый цвет текста при наведении */
+  background-color: #ff9100; /* Новый цвет фона при наведении */
+  transform: scale(1.1) rotate(1deg); /* Масштабирование и поворот при наведении */
+  box-shadow: 0 0 10px #ffffff;
+}
+
+/* Стили для состояния active */
+.button1:active {
+  color: #ffffffe4; /* Новый цвет текста при активации (нажатии) */
+  background-color: #ffae00; /* Новый цвет фона при активации */
+  transform: scale(0.9) rotate(-1deg);
+}
+
+/* Стили для состояния focus */
+.button1:focus {
+  outline: none; /* Убираем стандартное обводка при фокусе (необязательно, можно оставить) */
+  box-shadow: 0 0 10px #ffffff; /* Тень при фокусе для лучшей видимости */
+  /* Добавьте дополнительные стили по вашему желанию */
 }
 .Superpowers{
   position: relative;
@@ -353,9 +378,30 @@ body main{
   font-size: 1rem;
   line-height: 2rem;
   text-align: center;
+  transition: all 0.3s ease;
 }
 .rectr1 a{
   color: #000000;
+}
+.rectr1:hover {
+  color:#ffffffe4; /* Новый цвет текста при наведении */
+  background-color: #ff9100; /* Новый цвет фона при наведении */
+  transform: scale(1.1) rotate(1deg); /* Масштабирование и поворот при наведении */
+  box-shadow: 0 0 10px #ffffff;
+}
+
+/* Стили для состояния active */
+.rectr1:active {
+  color: #ffffffe4; /* Новый цвет текста при активации (нажатии) */
+  background-color: #ffae00; /* Новый цвет фона при активации */
+  transform: scale(0.9) rotate(-1deg);
+}
+
+/* Стили для состояния focus */
+.rectr1:focus {
+  outline: none; /* Убираем стандартное обводка при фокусе (необязательно, можно оставить) */
+  box-shadow: 0 0 10px #ffffff; /* Тень при фокусе для лучшей видимости */
+  /* Добавьте дополнительные стили по вашему желанию */
 }
 .rectr2{
   width: 240px;
@@ -370,9 +416,30 @@ body main{
   line-height: 2rem;
   text-align: center;
   text-decoration: none; /* Убираем подчеркивание ссылки */
+  transition: all 0.3s ease;
 }
 .rectr2 a{
   color: #ffffff;
+}
+.rectr2:hover {
+  color:#ffffff; /* Новый цвет текста при наведении */
+  background-color:rgba(255, 255, 255, 0.25); /* Новый цвет фона при наведении */
+  transform: scale(1.1) rotate(1deg); /* Масштабирование и поворот при наведении */
+  box-shadow: 0 0 10px #ffffff;
+}
+
+/* Стили для состояния active */
+.rectr2:active {
+  color: #ffffff; /* Новый цвет текста при активации (нажатии) */
+  background-color: rgba(255, 255, 255, 0.35); /* Новый цвет фона при активации */
+  transform: scale(0.9) rotate(-1deg);
+}
+
+/* Стили для состояния focus */
+.rectr2:focus {
+  outline: none; /* Убираем стандартное обводка при фокусе (необязательно, можно оставить) */
+  box-shadow: 0 0 10px #ffffff; /* Тень при фокусе для лучшей видимости */
+  /* Добавьте дополнительные стили по вашему желанию */
 }
 .learnmore{
   position: relative;
@@ -579,9 +646,6 @@ footer a{
     width: 540px;
     font-size: 1.25rem;
     line-height: 0.5rem;
-  }
-  .picture1{
-    width: 160%;
   }
 }
 

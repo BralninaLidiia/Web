@@ -42,7 +42,6 @@ body h1{
     border-radius: 16px;
     padding: 16px;
     box-sizing: border-box;
-
     font-family: 'PT Mono Regular', sans-serif;
     text-align: left;
     font-size: 0.9375rem;
@@ -55,7 +54,10 @@ body h1{
     color: red;
     margin-left: 0px; /* Расстояние от символа "*" до поля */
   }
-  
+  ::placeholder {
+    color: #999; /* Цвет текста подсказки */
+    font-style: italic; /* Наклонный шрифт, если нужно */
+  }
   
 
 .buttonform button{
@@ -69,9 +71,48 @@ font-size: 1.6rem;
 color: white;
 margin-top: 20px;
 margin-bottom: 20px;
-font-size: 1.25rem;
+font-size: 1.5rem;
 line-height: 2rem;
 color:#ffffff;
 margin-top: 0px;
 font-family: 'PT Mono Bold';
+transition: all 0.3s ease;
+}
+button:hover {
+  color:#ffffffe4; /* Новый цвет текста при наведении */
+  background-color: #ff9100; /* Новый цвет фона при наведении */
+  transform: scale(1.1) rotate(1deg); /* Масштабирование и поворот при наведении */
+  box-shadow: 0 0 10px #ffffff;
+}
+
+/* Стили для состояния active */
+button:active {
+  color: #ffffffe4; /* Новый цвет текста при активации (нажатии) */
+  background-color: #ffae00; /* Новый цвет фона при активации */
+  transform: scale(0.9) rotate(-1deg);
+}
+
+/* Стили для состояния focus */
+button:focus {
+  outline: none; /* Убираем стандартное обводка при фокусе (необязательно, можно оставить) */
+  box-shadow: 0 0 10px #ffffff; /* Тень при фокусе для лучшей видимости */
+  /* Добавьте дополнительные стили по вашему желанию */
+}
+header {
+  display: flex;
+  justify-content: space-between; /* Распределение пространства между элементами */
+  align-items: center;
+  width: 288px;
+  height: 56px;
+}
+.reloadbutton {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background-color: #10151A;
 }
