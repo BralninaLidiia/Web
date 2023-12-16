@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'PT Mono Bold'; 
+	src: url(pt-mono-bold.ttf); 
+}
+@font-face {
+	font-family: 'PT Mono Regular'; 
+	src: url(pt-mono-regular.ttf); 
+}
+body{
+    background-color: black;
+    text-align: center;
+    }
+body h1{
+  font-family: 'PT Mono Bold';
+  margin-top: 0px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  max-width: 288px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+  .optional {
+    color: #999;
+  }
+  
+  .form input:required {
+    border-color:#FFD600;
+    margin-left: 10px;
+  }
+  .form label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form input {
+    width: 280px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+
+    font-family: 'PT Mono Regular', sans-serif;
+    text-align: left;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    max-width: 288px;
+  }
+  
+  .form .required-sign {
+    color: red;
+    margin-left: 0px; /* Расстояние от символа "*" до поля */
+  }
+  
+  
+
+.buttonform button{
+background-color: #FFD600;
+border-radius: 16px;
+border: none;
+width: 280px;
+height: 60px;
+font-weight: 400;
+font-size: 1.6rem;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 1.25rem;
+line-height: 2rem;
+color:#ffffff;
+margin-top: 0px;
+font-family: 'PT Mono Bold';
+}
